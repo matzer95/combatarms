@@ -6,11 +6,11 @@ client.on('ready', () => {
 	console.log("I'm read to ban!");
 });
 
-client.on('message', message => {
-	if (message.content === '!sf_carnade') message.reply('https://www.youtube.com/watch?v=0nd11CmDdxE');
-	if (message.content === '!docs') message.reply('http://pastebin.com/AGjHZKmj');
-	if (message.content === '!gray_outside_a') message.reply('https://www.youtube.com/watch?v=ZkVDDrPZQj0');
-});
+//client.on('message', message => {
+//	if (message.content === '!sf_carnade') message.reply('https://www.youtube.com/watch?v=0nd11CmDdxE');
+//	if (message.content === '!docs') message.reply('http://pastebin.com/AGjHZKmj');
+//	if (message.content === '!gray_outside_a') message.reply('https://www.youtube.com/watch?v=ZkVDDrPZQj0');
+//});
 
 client.on('message', function (user, userID, channelID, message, evt) {
     if (message.substring(0, 1) == '!') {
