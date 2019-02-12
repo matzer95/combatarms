@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if (message.content === '!sf_carnade') message.reply('https://www.youtube.com/watch?v=0nd11CmDdxE');
+	if (message.content === '!info') message.reply("Type !docs or !'map_name'");
 	if (message.content === '!docs') message.reply("\n" +
 		"GRAY HAMMER: https://docs.google.com/document/d/1txZIn904D2F9ZNe4lWhoGROZX4K85A4OmSIkZfGete0/edit?usp=sharing" + "\n" +
 		"POWER SURGE: https://docs.google.com/document/d/1iAD8b1Zcaymvqx1eaPLEMDSTn4yLtUDerclUeJ_QrNo/edit?usp=sharing" + "\n" +
@@ -16,6 +16,7 @@ client.on('message', message => {
 		"SNOW VALLEY: https://docs.google.com/document/d/1jBo7Rw5eVvdei12IwowTgp6YyK9OhD_XfyCqhclR5Y4/edit?usp=sharing");
 	if (message.content === '!gray_outside_a') message.reply('https://www.youtube.com/watch?v=ZkVDDrPZQj0');
 	if (message.content === '!sf_bluecar') message.reply('https://imgur.com/a/zMdzP');
+	if (message.content === '!sf_carnade') message.reply('https://www.youtube.com/watch?v=0nd11CmDdxE');
 });
 
 /*client.on('message', function (user, userID, channelID, message, evt) {
