@@ -3,12 +3,12 @@ const client = new Discord.Client();
 const token = process.env.token;
 
 client.on('ready', () => {
-	console.log("I'm read to ban!");
+	console.log("I'm ready to ban!");
 });
 
 client.on('message', message => {
 	if (message.content === '!sf_carnade') message.reply('https://www.youtube.com/watch?v=0nd11CmDdxE');
-	if (message.content === '!gray_doc') message.reply('GRAY HAMMER: https://docs.google.com/document/d/1txZIn904D2F9ZNe4lWhoGROZX4K85A4OmSIkZfGete0/edit?usp=sharing');
+	if (message.content === '!docs') message.reply('gibts nich du hund');
 	if (message.content === '!gray_outside_a') message.reply('https://www.youtube.com/watch?v=ZkVDDrPZQj0');
 });
 
