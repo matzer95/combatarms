@@ -15,6 +15,7 @@ client.on('message', message => {
 		"SHORT FUSE:  https://docs.google.com/document/d/1QL46WkgNSaC6J3vnnVXxm3_RohT70blv-I87Qt8M0Vs/edit?usp=sharing" + "\n" +
 		"SNOW VALLEY: https://docs.google.com/document/d/1jBo7Rw5eVvdei12IwowTgp6YyK9OhD_XfyCqhclR5Y4/edit?usp=sharing");
 	if (message.content === '!gray_outside_a') message.reply('https://www.youtube.com/watch?v=ZkVDDrPZQj0');
+	if (message.content === '!sf_bluecar') message.reply('https://imgur.com/a/zMdzP');
 });
 
 /*client.on('message', function (user, userID, channelID, message, evt) {
