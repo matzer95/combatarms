@@ -17,6 +17,7 @@ client.on('message', message => {
 	if (message.content === '!gray_outside_a') message.reply('https://www.youtube.com/watch?v=ZkVDDrPZQj0');
 	if (message.content === '!sf_bluecar') message.reply('https://imgur.com/a/zMdzP');
 	if (message.content === '!sf_carnade') message.reply('https://www.youtube.com/watch?v=0nd11CmDdxE');
+	if ((message.content === '!shortfuse') || (message.content === '!short_fuse')) message.reply('https://docs.google.com/document/d/1QL46WkgNSaC6J3vnnVXxm3_RohT70blv-I87Qt8M0Vs/edit?usp=sharing');
 });
 
 /*client.on('message', function (user, userID, channelID, message, evt) {
