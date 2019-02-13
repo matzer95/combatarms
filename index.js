@@ -27,6 +27,16 @@ client.on('message', message => {
 	if (message.content === '!gray_outside_a') message.channel.send('https://www.youtube.com/watch?v=ZkVDDrPZQj0');
 	if (message.content === '!sf_bluecar') message.channel.send('https://imgur.com/a/zMdzP');
 	if (message.content === '!sf_whitecar') message.channel.send('https://www.youtube.com/watch?v=0nd11CmDdxE');
+	// NO NADE VIDS
+	if (message.content === '!PSST1') message.channel.send('https://www.youtube.com/watch?v=nTl9ufFtwuM');
+	if (message.content === '!PSST2') message.channel.send('https://www.youtube.com/watch?v=R2iQ6LrCOzE');
+	if (message.content === '!1v5') message.channel.send('https://www.youtube.com/watch?v=tOLMFpHTLZg');
+	if (message.content === '!mikki') message.channel.send('https://www.youtube.com/watch?v=gGhq_9ubHbI');
+	if (message.content === '!melee') message.channel.send('https://www.youtube.com/watch?v=z880r5pHh_Y');
+	if (message.content === '!1v4mtp') message.channel.send('https://www.youtube.com/watch?v=dS-bbM_RNgw');
+	if (message.content === '!modemtap') message.channel.send('https://www.youtube.com/watch?v=mEK9k_2nH0M');
+	if (message.content === '!r4z') message.channel.send('https://www.youtube.com/watch?v=IfghPvgU1Zk');
+	if ((message.client === 'Matze#7132') && (message.content === '!r4z1')) message.channel.send('du hund');
 	});
 
 /*client.on('message', function (user, userID, channelID, message, evt) {
