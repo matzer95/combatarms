@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if (message.substring(0, 1) == '!') {
+	if (message.content.startsWith("!")) {
 		
 		// IF CONDITION DIE NACHRICHTEN DIE NICHT MIT ! BEGINNT LÖSCHT
 		
@@ -46,8 +46,8 @@ client.on('message', message => {
 			if (message.content === '!r4z') message.channel.send('https://www.youtube.com/watch?v=IfghPvgU1Zk');
 			};
 	} else {
-		message.delete();
-	}
+		(message.delete(1));
+	};
 });
 
 /*client.on('message', function (user, userID, channelID, message, evt) {
