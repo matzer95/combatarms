@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
 	// INFO
-	if (message.content === '!info') message.channel.send("Try !docs or !'map_name'");
+	if (message.content === '!info') message.channel.send("Try !docs or !'map_name' hdf");
 	// ALLE DOCS
 	if (message.content === '!docs') message.channel.send(
 		"GRAY HAMMER: https://docs.google.com/document/d/1txZIn904D2F9ZNe4lWhoGROZX4K85A4OmSIkZfGete0/edit?usp=sharing" + "\n" +
