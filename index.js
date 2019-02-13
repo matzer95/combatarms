@@ -9,7 +9,7 @@ client.on('ready', () => {
 client.on('message', message => {
 	if (message.content.startsWith("!")) {
 		
-		// IF CONDITION DIE NACHRICHTEN DIE NICHT MIT ! BEGINNT LÖSCHT
+		// NACHRICHTEN NICHT LÖSCHEN DIE VOM BOT SELBST SIND
 		
 		// INFO
 		if (message.content === '!info') message.channel.send("Try !docs or !'map_name'");
@@ -45,7 +45,7 @@ client.on('message', message => {
 			if (message.content === '!modemtap') message.channel.send('https://www.youtube.com/watch?v=mEK9k_2nH0M');
 			if (message.content === '!r4z') message.channel.send('https://www.youtube.com/watch?v=IfghPvgU1Zk');
 			};
-	} else {
+	} else if (message.member.user.id !== '544956570539393024') {
 		(message.delete(1));
 	};
 });
