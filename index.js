@@ -38,8 +38,6 @@ client.on('message', message => {
 		if (message.content === '!modemtap') message.channel.send('https://www.youtube.com/watch?v=mEK9k_2nH0M');
 		if (message.content === '!r4z') message.channel.send('https://www.youtube.com/watch?v=IfghPvgU1Zk');
 		};
-	if ((message.member.user.id === '232917351245414400'/* || '240135407436693505'*/) && (message.content === '!hund')) message.channel.send('du hund');
-	});
 
 /*client.on('message', function (user, userID, channelID, message, evt) {
     if (message.substring(0, 1) == '!') {
