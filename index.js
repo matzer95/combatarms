@@ -46,7 +46,7 @@ client.on('message', message => {
 		(message.delete(1));
 	} else {
 		message.channel.send('This command does not exist.');
-		};
+		}; // dieses else muss in das obere große if rein, damit er nur die msg schickt wenn command mit ! beginnt und nicht existiert
 });
 
 /*client.on('message', function (user, userID, channelID, message, evt) {
