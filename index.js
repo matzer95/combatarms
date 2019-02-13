@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if (message.content.startsWith("!")) {	// ELSE STATEMENT GEHT NICHT
+	if ((message.content.startsWith("!")) || message.content === 'This command does not exist.') {
 		// INFO
 		if (message.content === '!info') message.channel.send("Try !docs or !'map_name'");
 		// ALLE DOCS
@@ -42,7 +42,6 @@ client.on('message', message => {
 			if (message.content === '!modemtap') message.channel.send('https://www.youtube.com/watch?v=mEK9k_2nH0M');
 			if (message.content === '!r4z') message.channel.send('https://www.youtube.com/watch?v=IfghPvgU1Zk');
 			};
-		
 	} else if (message.member.user.id !== '544956570539393024') {
 		(message.delete(1));
 	} else {
