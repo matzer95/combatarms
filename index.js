@@ -31,18 +31,16 @@ client.on('message', message => {
 		else if (message.content === '!gray_outside_a') message.channel.send('https://www.youtube.com/watch?v=ZkVDDrPZQj0');
 		else if (message.content === '!sf_bluecar') message.channel.send('https://imgur.com/a/zMdzP');
 		else if (message.content === '!sf_whitecar') message.channel.send('https://www.youtube.com/watch?v=0nd11CmDdxE');
-		// NO NADE VIDS (ATM ONLY SELIM & ICH)
-		else if (message.member.user.id === '232917351245414400' || '240135407436693505') {
-			if (message.content === '!PSST1') message.channel.send('https://www.youtube.com/watch?v=nTl9ufFtwuM');
-			if (message.content === '!PSST2') message.channel.send('https://www.youtube.com/watch?v=R2iQ6LrCOzE');
-			if (message.content === '!1v5') message.channel.send('https://www.youtube.com/watch?v=nqfAKg14VD0');
-			if (message.content === '!mikki') message.channel.send('https://www.youtube.com/watch?v=gGhq_9ubHbI');
-			if (message.content === '!melee') message.channel.send('https://www.youtube.com/watch?v=z880r5pHh_Y');
-			if (message.content === '!1v4mtp') message.channel.send('https://www.youtube.com/watch?v=dS-bbM_RNgw');
-			if (message.content === '!modemtap') message.channel.send('https://www.youtube.com/watch?v=mEK9k_2nH0M');
-			if (message.content === '!r4z') message.channel.send('https://www.youtube.com/watch?v=IfghPvgU1Zk');
-		//} else if (1 === 1) message.channel.send('This command does not exist.');
-		} else if (message.content === '!hund') message.channel.send('lasse frisst hundescheiße');
+		// NO NADE VIDS (FÜR ONLY SELIM & ICH -> if (message.member.user.id === '232917351245414400' || '240135407436693505')) 
+		else if (message.content === '!PSST1') message.channel.send('https://www.youtube.com/watch?v=nTl9ufFtwuM');
+		else if (message.content === '!PSST2') message.channel.send('https://www.youtube.com/watch?v=R2iQ6LrCOzE');
+		else if (message.content === '!1v5') message.channel.send('https://www.youtube.com/watch?v=nqfAKg14VD0');
+		else if (message.content === '!mikki') message.channel.send('https://www.youtube.com/watch?v=gGhq_9ubHbI');
+		else if (message.content === '!melee') message.channel.send('https://www.youtube.com/watch?v=z880r5pHh_Y');
+		else if (message.content === '!1v4mtp') message.channel.send('https://www.youtube.com/watch?v=dS-bbM_RNgw');
+		else if (message.content === '!modemtap') message.channel.send('https://www.youtube.com/watch?v=mEK9k_2nH0M');
+		else if (message.content === '!r4z') message.channel.send('https://www.youtube.com/watch?v=IfghPvgU1Zk');
+		else message.channel.send('This command does not exist.');
 	} else if (message.member.user.id !== '544956570539393024') message.delete(1);
 });
 
