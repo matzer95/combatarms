@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-	if ((message.content.startsWith("!")) || message.content === 'This command does not exist.') {
+	if ((message.content.startsWith("!")) || (message.content === 'This command does not exist.')) {
 		// INFO
 		if (message.content === '!info') message.channel.send("Try !docs or !'map_name'");
 		// ALLE DOCS
