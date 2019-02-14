@@ -40,25 +40,9 @@ client.on('message', message => {
 		else if (message.content === '!1v4mtp') message.channel.send('https://www.youtube.com/watch?v=dS-bbM_RNgw');
 		else if (message.content === '!modemtap') message.channel.send('https://www.youtube.com/watch?v=mEK9k_2nH0M');
 		else if (message.content === '!r4z') message.channel.send('https://www.youtube.com/watch?v=IfghPvgU1Zk');
+		// NOT EXIST COMMAND
 		else message.channel.send('This command does not exist.');
 	} else if (message.member.user.id !== '544956570539393024') message.delete(1);
 });
-
-/*client.on('message', function (user, userID, channelID, message, evt) {
-    if (message.substring(0, 1) == '!') {
-        var args = message.substring(1).split(' ');
-        var cmd = args[0];
-       
-        args = args.splice(1);
-        switch(cmd) {
-            case 'hund':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'ne du'
-                });
-            break;
-         }
-     }
-});*/
 
 client.login(token).catch(err => console.log(err));
