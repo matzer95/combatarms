@@ -41,7 +41,8 @@ client.on('message', message => {
 			if (message.content === '!1v4mtp') message.channel.send('https://www.youtube.com/watch?v=dS-bbM_RNgw');
 			if (message.content === '!modemtap') message.channel.send('https://www.youtube.com/watch?v=mEK9k_2nH0M');
 			if (message.content === '!r4z') message.channel.send('https://www.youtube.com/watch?v=IfghPvgU1Zk');
-		} else if (1 === 1) message.channel.send('This command does not exist.');
+		} //else if (1 === 1) message.channel.send('This command does not exist.');
+		else if (message.content === '!hund') message.channel.send('lasse frisst hundescheiße');
 	} else if (message.member.user.id !== '544956570539393024') message.delete(1);
 });
 
