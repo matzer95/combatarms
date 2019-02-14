@@ -44,12 +44,12 @@ client.on('message', message => {
 			};
 		else {
 			message.channel.send('This command does not exist.');
-			};
+			}
 	} else if (message.member.user.id !== '544956570539393024') {
 		(message.delete(1));
 	} else {
 		message.channel.send('This command does not exist1.');
-		}; // dieses else muss in das obere große if rein, damit er nur die msg schickt wenn command mit ! beginnt und nicht existiert
+		} // dieses else muss in das obere große if rein, damit er nur die msg schickt wenn command mit ! beginnt und nicht existiert
 });
 
 /*client.on('message', function (user, userID, channelID, message, evt) {
