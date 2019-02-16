@@ -40,6 +40,7 @@ client.on('message', message => {
 		else if (message.content === '!1v4mtp') message.channel.send('https://www.youtube.com/watch?v=dS-bbM_RNgw');
 		else if (message.content === '!modemtap') message.channel.send('https://www.youtube.com/watch?v=mEK9k_2nH0M');
 		else if (message.content === '!r4z') message.channel.send('https://www.youtube.com/watch?v=IfghPvgU1Zk');
+		else if (message.content === '!marcel') message.channel.send('https://www.youtube.com/watch?v=RFWbO4hvsvA');
 		// NOT EXIST COMMAND
 		else message.channel.send('This command does not exist.');
 	} else if (message.member.user.id !== '544956570539393024') message.delete(1);
