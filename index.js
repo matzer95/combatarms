@@ -37,7 +37,7 @@ client.on('message', message => {
 		else if (message.content === '!PSST1') message.channel.send('https://www.youtube.com/watch?v=nTl9ufFtwuM');
 		else if (message.content === '!PSST2') message.channel.send('https://www.youtube.com/watch?v=R2iQ6LrCOzE');
 		else if (message.content === '!1v5') message.channel.send('https://www.youtube.com/watch?v=nqfAKg14VD0');
-		else if (message.content === '!mikki' || '!bhop') message.channel.send('https://www.youtube.com/watch?v=gGhq_9ubHbI');
+		else if (message.content === '!mikki') message.channel.send('https://www.youtube.com/watch?v=gGhq_9ubHbI');
 		else if (message.content === '!melee') message.channel.send('https://www.youtube.com/watch?v=z880r5pHh_Y');
 		else if (message.content === '!1v4mtp') message.channel.send('https://www.youtube.com/watch?v=dS-bbM_RNgw');
 		else if (message.content === '!modemtap') message.channel.send('https://www.youtube.com/watch?v=mEK9k_2nH0M');
