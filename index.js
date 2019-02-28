@@ -6,6 +6,8 @@ client.on('ready', () => {
 	console.log("Beep Boop, I'm ready!");
 });
 
+var list_of_commands = ["info", "docs", "grayhammer", "powersurge", "rattlesnake", "shortfuse", "snowvalley", "warhead", "slaughterhouse", "piazza", "gray_outside_a", "sf_bluecar", "sf_whitecar", "PSST1", "PSST2", "1v5", "1v4mtp", "mikki", "melee", "modemtap", "r4z", "marcel", "oh"];
+
 client.on('message', message => {
 	if (message.content.startsWith("!")) {
 		// INFO
@@ -35,12 +37,15 @@ client.on('message', message => {
 		else if (message.content === '!PSST1') message.channel.send('https://www.youtube.com/watch?v=nTl9ufFtwuM');
 		else if (message.content === '!PSST2') message.channel.send('https://www.youtube.com/watch?v=R2iQ6LrCOzE');
 		else if (message.content === '!1v5') message.channel.send('https://www.youtube.com/watch?v=nqfAKg14VD0');
-		else if (message.content === '!mikki') message.channel.send('https://www.youtube.com/watch?v=gGhq_9ubHbI');
+		else if (message.content === '!mikki' || '!bhop') message.channel.send('https://www.youtube.com/watch?v=gGhq_9ubHbI');
 		else if (message.content === '!melee') message.channel.send('https://www.youtube.com/watch?v=z880r5pHh_Y');
 		else if (message.content === '!1v4mtp') message.channel.send('https://www.youtube.com/watch?v=dS-bbM_RNgw');
 		else if (message.content === '!modemtap') message.channel.send('https://www.youtube.com/watch?v=mEK9k_2nH0M');
 		else if (message.content === '!r4z') message.channel.send('https://www.youtube.com/watch?v=IfghPvgU1Zk');
 		else if (message.content === '!marcel') message.channel.send('https://www.youtube.com/watch?v=RFWbO4hvsvA');
+		else if (message.content === '!oh') message.channel.send('https://www.youtube.com/watch?v=2KZuZknEI4c');
+		// LIST
+		else if (message.content === '!list') message.channel.send(list_of_commands);
 		// NOT EXIST COMMAND
 		else message.channel.send('This command does not exist.');
 	} else if (message.member.user.id !== '544956570539393024') message.delete(1);
