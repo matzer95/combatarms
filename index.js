@@ -47,8 +47,8 @@ client.on('message', message => {
 		// LIST
 		else if (message.content === '!list') message.channel.send(list_of_commands);
 		// ROLE ASSIGN
-		else if (message.content === '!b') message.channel.send(message.member.roles);
-		else if (message.content === '!a') message.channel.send(guild.id);	// geht grad nich
+		else if (message.content === '!b') message.channel.send('a');
+		else if (message.content === '!a') message.channel.send(message.member.addRole('655357708773621770'));
 		// NOT EXIST COMMAND
 		else message.channel.send('This command does not exist.');
 	} else if (message.member.user.id !== '544956570539393024') message.delete(1);
