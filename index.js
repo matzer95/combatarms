@@ -2,49 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.env.token;
 
-package so4308554;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.net.URL;
-import java.nio.charset.Charset;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-public class JsonReader {
-
-  private static String readAll(Reader rd) throws IOException {
-    StringBuilder sb = new StringBuilder();
-    int cp;
-    while ((cp = rd.read()) != -1) {
-      sb.append((char) cp);
-    }
-    return sb.toString();
-  }
-
-  public static JSONObject readJsonFromUrl(String url) throws IOException, JSONException {
-    InputStream is = new URL(url).openStream();
-    try {
-      BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
-      String jsonText = readAll(rd);
-      JSONObject json = new JSONObject(jsonText);
-      return json;
-    } finally {
-      is.close();
-    }
-  }
-
-  public static void main(String[] args) throws IOException, JSONException {
-    JSONObject json = readJsonFromUrl("https://www.googleapis.com/youtube/v3/search?key=AIzaSyBFEroixeYsZxGdaRDWzr-t8HL2k9opbQU&channelId=UC22lgsPNuxoOykjrjfXD18A&part=id&order=date&maxResults=1");
-    System.out.println(json.toString());
-    System.out.println(json.get("id"));
-  }
-}
-
 client.on('ready', () => {
 	console.log("Beep Boop, I'm ready!");
 });
@@ -90,7 +47,6 @@ client.on('message', message => {
 		// LIST
 		else if (message.content === '!list') message.channel.send(list_of_commands);
 		// ROLE ASSIGN
-		else if (message.content === '!list') message.channel.send(json);
 		else if (message.content === '!add_YT') message.member.addRole('655357708773621770');
 		else if (message.content === '!remove_YT') message.member.removeRole('655357708773621770');
 		// NOT EXIST COMMAND
