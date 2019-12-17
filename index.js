@@ -11,7 +11,7 @@ var list_of_commands = ["info", "docs", "grayhammer", "powersurge", "rattlesnake
 client.on('message', message => {
 	if (message.content.startsWith("!")) {
 		// INFO
-		if (message.content === '!info') message.channel.send("Try !docs or !'map_name'");
+		if (message.content === '!info') message.channel.send("'!list' gives a list of all available commands");
 		// ALLE DOCS
 		else if (message.content === '!docs') message.channel.send(
 			"GRAY HAMMER: https://docs.google.com/document/d/1txZIn904D2F9ZNe4lWhoGROZX4K85A4OmSIkZfGete0/edit?usp=sharing" + "\n" +
