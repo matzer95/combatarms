@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.env.token;
 
+
 client.on('ready', () => {
 	console.log("Beep Boop, I'm ready!");
 });
