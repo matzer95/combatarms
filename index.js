@@ -33,7 +33,7 @@ client.on('message', message => {
 		else if (message.content === '!gray_outside_a') message.channel.send('https://www.youtube.com/watch?v=ZkVDDrPZQj0');
 		else if (message.content === '!sf_bluecar') message.channel.send('https://imgur.com/a/zMdzP');
 		else if (message.content === '!sf_whitecar') message.channel.send('https://www.youtube.com/watch?v=0nd11CmDdxE');
-		// NO NADE VIDS (FÜR ONLY SELIM & ICH -> if (message.member.user.id === '232917351245414400' || '240135407436693505')) 
+		// NO NADE VIDS 
 		else if (message.content === '!PSST1') message.channel.send('https://www.youtube.com/watch?v=nTl9ufFtwuM');
 		else if (message.content === '!PSST2') message.channel.send('https://www.youtube.com/watch?v=R2iQ6LrCOzE');
 		else if (message.content === '!1v5') message.channel.send('https://www.youtube.com/watch?v=nqfAKg14VD0');
