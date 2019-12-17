@@ -46,6 +46,8 @@ client.on('message', message => {
 		else if (message.content === '!oh') message.channel.send('https://www.youtube.com/watch?v=2KZuZknEI4c');
 		// LIST
 		else if (message.content === '!list') message.channel.send(list_of_commands);
+		// ROLE ASSIGN
+		else if (message.content === '!assign') message.channel.send(member.roles);
 		// NOT EXIST COMMAND
 		else message.channel.send('This command does not exist.');
 	} else if (message.member.user.id !== '544956570539393024') message.delete(1);
