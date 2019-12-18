@@ -11,7 +11,7 @@ var list_of_commands = ["info", "docs", "grayhammer", "powersurge", "rattlesnake
 
 client.on('message', message => {
 	<script>
-    $.getJSON('http://time.jsontest.com', function(data) {     
+    getJSON('http://time.jsontest.com', function(data) {     
         var text = `Date: ${data.date}<br>
                     Time: ${data.time}
     });
