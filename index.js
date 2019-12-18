@@ -1,8 +1,10 @@
+npm install node-fetch
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.env.token;
 
-const fetch = require('node-fetch');
+const fetch = require('node-fetch');			//hier
 
 client.on('ready', () => {
 	console.log("Beep Boop, I'm ready!");
