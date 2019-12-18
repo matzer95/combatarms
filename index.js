@@ -9,12 +9,11 @@ client.on('ready', () => {
 
 var list_of_commands = ["info", "docs", "grayhammer", "powersurge", "rattlesnake", "shortfuse", "snowvalley", "warhead", "slaughterhouse", "piazza", "gray_outside_a", "sf_bluecar", "sf_whitecar", "PSST1", "PSST2", "1v5", "1v4mtp", "mikki", "melee", "modemtap", "r4z", "marcel", "oh"];
 
-<script>
-    $.getJSON('http://time.jsontest.com', function(data) {     
-        var text = `Date: ${data.date}<br>
-                    Time: ${data.time}
-    });
-</script>
+
+$.getJSON('http://time.jsontest.com', function(data) {     
+    var text = `Date: ${data.date}<br>
+                Time: ${data.time}
+});
 
 client.on('message', message => {
 	if (message.content.startsWith("!")) {
