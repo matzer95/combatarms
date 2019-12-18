@@ -9,6 +9,13 @@ client.on('ready', () => {
 
 var list_of_commands = ["info", "docs", "grayhammer", "powersurge", "rattlesnake", "shortfuse", "snowvalley", "warhead", "slaughterhouse", "piazza", "gray_outside_a", "sf_bluecar", "sf_whitecar", "PSST1", "PSST2", "1v5", "1v4mtp", "mikki", "melee", "modemtap", "r4z", "marcel", "oh"];
 
+<script>
+    $.getJSON('http://time.jsontest.com', function(data) {     
+        var text = `Date: ${data.date}<br>
+                    Time: ${data.time}
+    });
+</script>
+
 client.on('message', message => {
 	if (message.content.startsWith("!")) {
 		// INFO
@@ -50,6 +57,7 @@ client.on('message', message => {
 		// ROLE ASSIGN
 		else if (message.content === '!add_YT') message.member.addRole('655357708773621770');
 		else if (message.content === '!remove_YT') message.member.removeRole('655357708773621770');
+		else if (message.content === '!test1') message.channel.send(text);
 		// NOT EXIST COMMAND
 		else message.channel.send('This command does not exist.');
 	} else if (message.member.user.id !== '544956570539393024') message.delete(1);
