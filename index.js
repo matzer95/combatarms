@@ -1,9 +1,8 @@
-npm install node-fetch
-
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.env.token;
 
+const fetch = require('node-fetch');
 
 client.on('ready', () => {
 	console.log("Beep Boop, I'm ready!");
@@ -59,6 +58,10 @@ client.on('message', message => {
 		else if (message.content === '!add_YT') message.member.addRole('655357708773621770');
 		else if (message.content === '!remove_YT') message.member.removeRole('655357708773621770');
 		else if (message.content === '!test1') message.channel.send(text);
+		else if (message.content === '!cat') {
+			const { file } = await fetch('https://aws.random.cat/meow').then(response => response.json());
+			message.channel.send(file);
+		}
 		// NOT EXIST COMMAND
 		else message.channel.send('This command does not exist.');
 	} else if (message.member.user.id !== '544956570539393024') message.delete(1);
