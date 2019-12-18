@@ -10,11 +10,11 @@
 
 	var list_of_commands = ["info", "docs", "grayhammer", "powersurge", "rattlesnake", "shortfuse", "snowvalley", "warhead", "slaughterhouse", "piazza", "gray_outside_a", "sf_bluecar", "sf_whitecar", "PSST1", "PSST2", "1v5", "1v4mtp", "mikki", "melee", "modemtap", "r4z", "marcel", "oh"];
 
-	jQuery.getJSON('http://time.jsontest.com', function(data) {       
-			var text = `Date: ${data.date}<br>
-						Time: ${data.time}<br>
-						Unix time: ${data.milliseconds_since_epoch}`
-	});
+	//jQuery.getJSON('http://time.jsontest.com', function(data) {       
+	//		var text = `Date: ${data.date}<br>
+	//					Time: ${data.time}<br>
+	//					Unix time: ${data.milliseconds_since_epoch}`
+	//});
 
 	client.on('message', message => {
 		if (message.content.startsWith("!")) {
